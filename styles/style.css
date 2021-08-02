@@ -1,0 +1,67 @@
+.box_line{
+    text-align: center;
+}
+.box{
+    list-style: none;
+    padding: 20px;
+    width: 140px;
+    height: 140px;
+    border: solid 5px #000;
+    border-radius: 35px;
+    box-sizing: border-box;
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: space-between;
+    margin: 15px;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+.box:hover{
+    background: #1b62b3;
+    color: #ffe
+}
+.box_point::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 100%;
+}
+.box_six{
+    flex-flow: wrap column;
+    align-content: space-between;
+}
+.box_two .box_point:nth-child(2){
+    align-self: flex-end;
+}
+.box_five{
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.box_five .box_point:nth-child(3){
+    width: 100%;
+    text-align: center;
+}
+.box_three .box_point:nth-child(3){
+    align-self: flex-end;
+}
+.box_three .box_point:nth-child(2){
+    align-self: center;
+}
+.box_four{
+    flex-wrap: wrap;
+    align-content: space-between;
+ }
+.box_four .box_point{
+     width: 50%;
+}
+.box_four .box_point:nth-child(even){
+    text-align: right;
+}
+.box_four .box_point:nth-child(odd){
+    text-align: left;
+}
+.box_one{
+    justify-content: center;
+    align-items: center;
+ }
